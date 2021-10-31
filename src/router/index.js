@@ -5,6 +5,9 @@ import DataBindingHtml from '../views/DataBindingHtml.vue'
 import DataBindingInputText from '../views/DataBindingInputText.vue'
 import DataBindingSelect from '../views/DataBindingSelect'
 import DataBindingCheckbox2 from '../views/DataBindingCheckbox2'
+import DbindingButton from '../views/DbindingButton'
+import DbindingClass from '../views/DbindingClass'
+import DbindingList from '../views/DbindingList'
 
 const routes = [
   {
@@ -43,6 +46,21 @@ const routes = [
     path: '/dbcheckbox2',
     name: 'DataBindingCheckbox2',
     component: DataBindingCheckbox2
+  },
+  {
+    path: '/dbButton',
+    name: 'dbindingBUtton',
+    component: DbindingButton
+  },
+  {
+    path: '/dbclass',
+    name: 'dbclass',
+    component: DbindingClass
+  },
+  {
+    path: '/dbList',
+    name: 'dbList',
+    component: DbindingList
   }
 ]
 
