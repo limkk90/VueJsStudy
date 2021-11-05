@@ -8,6 +8,11 @@ import DataBindingCheckbox2 from '../views/DataBindingCheckbox2'
 import DbindingButton from '../views/DbindingButton'
 import DbindingClass from '../views/DbindingClass'
 import DbindingList from '../views/DbindingList'
+import EventClick from '../views/EventClick'
+import DataBindingList2 from '../views/DataBindingList2'
+import NestedComponent from '../views/NestedComponent'
+import ParentComponent from '../views/ParentComponent'
+import ParentComponent4 from '../views/ParentComponent4'
 
 const routes = [
   {
@@ -61,6 +66,35 @@ const routes = [
     path: '/dbList',
     name: 'dbList',
     component: DbindingList
+  },
+  {
+    path: '/event',
+    name: 'event',
+    component: EventClick
+  },
+  {
+    path: '/dbList2',
+    name: 'dbList2',
+    component: DataBindingList2
+  },
+  {
+    path: '/nested',
+    name: 'nested',
+    component: NestedComponent
+  },
+  {
+    path: '/parent',
+    name: 'ParentComponent',
+    component: ParentComponent
+  },
+  {
+    path: '/parent4',
+    name: 'ParentComponent4',
+    component: ParentComponent4
+  },{
+    path: '/slot',
+    name: 'SlotUseModalLayout',
+    component: () => import( /* webpackChunkName: "slot" */ '../views/SlotUseModalLayout.vue')
   }
 ]
 
@@ -68,5 +102,4 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
-
 export default router

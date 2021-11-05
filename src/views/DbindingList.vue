@@ -58,9 +58,7 @@ export default {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    
     }
-    button:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    }
+    
 </style>
