@@ -17,10 +17,6 @@ export default({
     //     }
     // }
     //P156
-    data(){
-        return{
-            title: '동적 페이지 타이틀'
-        };
-    }
+    
 })
 </script>

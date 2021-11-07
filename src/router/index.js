@@ -13,6 +13,7 @@ import DataBindingList2 from '../views/DataBindingList2'
 import NestedComponent from '../views/NestedComponent'
 import ParentComponent from '../views/ParentComponent'
 import ParentComponent4 from '../views/ParentComponent4'
+import Docs from '../views/docs'
 
 const routes = [
   {
@@ -95,6 +96,11 @@ const routes = [
     path: '/slot',
     name: 'SlotUseModalLayout',
     component: () => import( /* webpackChunkName: "slot" */ '../views/SlotUseModalLayout.vue')
+  },
+  {
+    path: '/docs',
+    name: 'Docs',
+    component: Docs
   }
 ]
 
