@@ -1,5 +1,6 @@
 <template>
 <button type="button" @click="childFunc" ref="btn">click</button>
+<button type="button" @click="childFunc" ref="btn">click</button>
 <h1>{{msg}}</h1>
 </template>
 <script>
@@ -8,14 +9,7 @@ export default {
    childFunc() {
      console.log('부모 컴포넌트에서 직접 발생시킨 이벤트');
    },
-   callFromParent(){
-       console.log('부모컴포넌트에서 직접 호출한 함수');
-   }
+   
  },
- data(){
-     return{
-         msg: ''
-     };
-  }
 }
 </script>
