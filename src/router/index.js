@@ -12,6 +12,7 @@ import EventClick from '../views/EventClick'
 import DataBindingList2 from '../views/DataBindingList2'
 import NestedComponent from '../views/NestedComponent'
 import ParentComponent from '../views/ParentComponent'
+import ParentComponent2 from '../views/ParentComponent2'
 import ParentComponent4 from '../views/ParentComponent4'
 import Docs from '../views/docs'
 
@@ -87,6 +88,11 @@ const routes = [
     path: '/parent',
     name: 'ParentComponent',
     component: ParentComponent
+  },
+  {
+    path: '/parent2',
+    name: 'ParentComponent2',
+    component: ParentComponent2
   },
   {
     path: '/parent4',
